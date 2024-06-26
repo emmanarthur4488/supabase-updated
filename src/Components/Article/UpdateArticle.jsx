@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import {useParams, useNavigate} from "react-router-dom"
-import { supabase} from '../../Components/Config/Client'
+import { supabase} from '../Config/Client'
 
 const UpdateArticle = () => {
 
