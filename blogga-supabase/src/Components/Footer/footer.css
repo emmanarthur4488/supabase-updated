@@ -1,0 +1,13 @@
+.footer{
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: Graphik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #232E52;
+    border-top: 1px solid #cccccc;
+    margin: 2rem;
+}

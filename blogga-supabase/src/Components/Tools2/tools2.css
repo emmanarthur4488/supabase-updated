@@ -1,0 +1,18 @@
+.tools2{
+    font-family: Graphik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    border: 1px solid #cccccc;
+    width: 214px;
+    padding-left: 2px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.tools2 span{
+    background: #ffffff;
+    margin-left: 8px;
+    color: #232E52;
+}
