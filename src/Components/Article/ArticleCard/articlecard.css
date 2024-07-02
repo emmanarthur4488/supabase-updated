@@ -4,6 +4,9 @@
 }
 .card-box{
     display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .card-box .heading{
     text-transform: uppercase;
@@ -27,8 +30,12 @@
     display: flex;
     gap: 0.75rem;
     margin-bottom: 1rem;
-    /* margin-left: 10.5rem; */
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.cardlink .date{
+    font-size: 10px;
+    color: #232E52;
 }
 
 .headingcap{
@@ -40,6 +47,22 @@
     padding-left: 7px;
     border-radius: 5px;
     text-transform: uppercase;
+}
+.card-title .title{
+    color: #232E52;
+    font-family: Graphik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+.card-title .method{
+    color: #232E52;
+    font-family: Graphik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 
@@ -63,5 +86,9 @@
     .headingcap{
         margin-left: 0rem;
         margin-bottom: 5px;
+    }
+    .cardlink .date{
+        font-size: 8px;
+        color: #232E52;
     }
 }

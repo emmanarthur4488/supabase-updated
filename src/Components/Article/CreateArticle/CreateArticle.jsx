@@ -3,9 +3,10 @@ import {useNavigate} from "react-router-dom"
 import {supabase} from "../../Config/Client"
 import './createarticle.css'
 
+
 const CreateArticle = () => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [title, setTile] = useState('')
   const [method, setMethod] = useState('')
@@ -33,10 +34,14 @@ const CreateArticle = () => {
       if (data) {
         console.log(data)
         setFormError(null)
-        navigate('/blog')
+        
       }
+      setTimeout(()=>{
+        navigate('/')
+      }, 5000);
     }
 
+    
 
 
   return (
@@ -73,8 +78,9 @@ const CreateArticle = () => {
          onChange={(e) => setMethod(e.target.value)}
         /> <br/>
 
-        <button>Create An Article</button>
+        <button>Post An Article</button>
         {formError && <p className="error">{formError}</p>}
+        {/* {!smoothies && <div>Loading....</div>} */}
       </form>
     </div>
   )

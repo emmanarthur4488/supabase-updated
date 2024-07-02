@@ -6,7 +6,7 @@ const More = () => {
   return (
     <div>
       <div className="more">
-        <Link to='/createarticle'><button>More articles</button></Link>
+        <Link to='/createarticle'><button>Post articles</button></Link>
       </div>
     </div>
   )

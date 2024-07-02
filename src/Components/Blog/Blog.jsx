@@ -1,11 +1,9 @@
 import React from 'react'
 import './blog.css'
 import Tools from '../Tools/Tools'
-import DesignCard from '../DesignCard2/DesignCard'
-import More from '../More/More'
 import Subscribe from '../Subscribe/Subscribe'
 import Footer from '../Footer/Footer'
-import MoreArticle from '../Article/MoreArticles/MoreArticles'
+
 
 const Blog = () => {
   return (
@@ -18,13 +16,6 @@ const Blog = () => {
       </div>
 
       <div>
-        <div className="design">
-          <h1>Design Tools</h1>
-          <hr/>
-        </div>
-        <DesignCard/>
-        <More/>
-        <MoreArticle/>
         <Subscribe/>
         <Footer/>
       </div>

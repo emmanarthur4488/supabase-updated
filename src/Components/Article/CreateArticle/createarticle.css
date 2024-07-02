@@ -4,14 +4,14 @@
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    background: #eeeeee;
+    background:  #EBF2FE;
     padding: 1rem;
 }
 form input{
     width: 100%;
     padding: 3px;
     box-sizing: border-box;
-    border: 2px solid #cccccc;
+    border: 2px solid  #a7b2c4;
     margin-bottom: 1rem;
     outline: none;
 }

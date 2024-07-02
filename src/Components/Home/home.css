@@ -34,17 +34,23 @@
     text-transform: lowercase;
     color: #aaaaaa;
 }
-.btn{
-    background: rgba(255, 255, 255, 0.10);
+.post{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
+    background: #EBF2FE;
+    color: #232E52;
+    text-align: center;
+    font-family: Graphik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
     border-radius: 8px;
-    display: inline-flex;
-    padding: 10px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .design h1{
     color: #232E52;
@@ -68,14 +74,14 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 1rem;
     }
     .introduction{
         text-align: center;
         padding: 0;
     }
     .introduction h2{
-        font-size: 32px;
+        font-size: 30px;
     }
     .design{
         margin-top: 2rem;
@@ -86,7 +92,7 @@
         color: #fff;
         font-size: 10px;
     }
-    .btn{
-        font-size: 15px;
+    .post{
+        font-size: 12px;
     }
 }

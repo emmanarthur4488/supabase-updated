@@ -1,16 +1,17 @@
 import React, {useEffect, useState} from 'react'
-import {supabase} from "../../Config/Client"
-import ArticleCard from '../ArticleCard/ArticleCard'
-import SkeletonArticle from '../../Skeletons/SkeletonArticle'
+import {supabase} from "../Config/Client"
+import ArticleCard from './ArticleCard/ArticleCard'
+import PageCard from './PageCard'
+import SkeletonArticle from '../Skeletons/SkeletonArticle'
 
 
-
-
-
-const MoreArticles = () => {
-
+const ArticlePage = () => {
   const [fetchError, setFetchError] = useState(null)
   const [smoothies, setSmoothies] = useState(null)
+  const [title, setTile] = useState('')
+  const [method, setMethod] = useState('')
+  const [date, setDate] = useState('')
+  const [heading, setHeading] = useState('')
   
 
   useEffect(() => {
@@ -18,6 +19,8 @@ const MoreArticles = () => {
       const { data, error} = await supabase
         .from('smoothies')
         .select()
+        .eq('id', 37)
+        
 
         if (error) {
           setFetchError('could not fetch the article')
@@ -28,9 +31,13 @@ const MoreArticles = () => {
           setSmoothies(data)
           setFetchError(null)
         }
-        setTimeout(() => {
-          setSmoothies(data)
-        }, 8000);
+        if (data) {
+          setTile(data.title)
+          setMethod(data.method)
+          setDate(data.date)
+          setHeading(data.heading)
+          console.log(data)
+        }
     }
       fetchSmoothies()
   }, [])
@@ -43,15 +50,15 @@ const MoreArticles = () => {
         <div className="blogga">
           <div className="blogga-grid">
             {smoothies.map(smoothie => (
-              <ArticleCard key={smoothie.id} smoothie={smoothie}
+              <PageCard key={smoothie.id} smoothie={smoothie}
               />
             ))}
           </div>
         </div>
       )}
-      {!smoothies && [1,2,3,4,5].map((n) => <SkeletonArticle key= {n} theme="light"/>)}
+      {!smoothies && [1,2,3].map((n) => <SkeletonArticle key= {n} theme="light"/>)}
     </div>
   )
 }
 
-export default MoreArticles
+export default ArticlePage

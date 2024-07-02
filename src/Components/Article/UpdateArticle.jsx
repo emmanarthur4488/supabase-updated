@@ -59,6 +59,7 @@ const UpdateArticle = () => {
     }
     fetchSmoothie()
 },[id, navigate])
+
   return (
     <div>
       <form onSubmit={handleSubmit}>

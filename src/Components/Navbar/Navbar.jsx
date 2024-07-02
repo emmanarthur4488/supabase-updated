@@ -24,8 +24,8 @@ class Navbar extends Component {
       </div>
 
       <div>
-          <button className="btn">Subscribe</button>
-        </div>
+        <Link to='/createarticle'><button className="post">Post articles</button></Link>
+      </div>
 
       <div id="mobile" onClick={this.handleClick}>
         <i id="bars" className={this.state.clicked ?"fas fa-times" : "fas fa-bars"}></i>
